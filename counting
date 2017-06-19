@@ -1,0 +1,23 @@
+SEQUENCE = "ATTAGC"
+num_A=0
+num_T=0
+num_G=0
+num_C=0
+total=0
+for i in SEQUENCE:
+	total+=1
+	if i=="A":
+		num_A+=1
+	if i=="T":
+		num_T+=1
+	if i=="G":
+		num_G+=1
+	if i=="C":
+		num_C+=1
+
+print "Number of As =", num_A, float(num_A)/float(total)*100, "%"
+print "Number of Ts =", num_T, float(num_T)/float(total)*100, "%"
+print "Number of Gs =", num_G, float(num_G)/float(total)*100, "%"
+print "Number of Cs =", num_C, float(num_C)/float(total)*100, "%"
+
+

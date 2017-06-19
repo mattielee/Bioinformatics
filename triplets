@@ -1,0 +1,12 @@
+SEQUENCE = "ATTAGCAAATCG"
+total=0
+num = 0
+
+for i in SEQUENCE:
+	total+=1
+
+while num<total:
+	print SEQUENCE[num:num+3]
+	num+=3
+
+
