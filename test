@@ -1,0 +1,3 @@
+file = open("triplets", "r")
+x = file.readline()
+print x

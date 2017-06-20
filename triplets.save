@@ -1,0 +1,22 @@
+SEQUENCE = "ATTAGCAAATCG"
+total=0
+num = 0
+
+protein = {}
+protein['TTT'] = "F"
+protein['TTC'] = "F"
+
+protein['TTA'] = "L"
+protein['TTG'] = "L"
+
+protein['CTT'] = "L"
+print protein['TTT']
+
+for i in SEQUENCE:
+	total+=1
+
+while num<total:
+	print SEQUENCE[num:num+3]
+	num+=3
+
+
