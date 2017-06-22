@@ -1,0 +1,21 @@
+SEQUENCE = "ATGACTGA"
+s = ""
+
+reverse = SEQUENCE[::-1]
+
+for i in range(len(reverse)):
+	if reverse[i] == "A":
+		print "T",
+
+	if reverse[i] == "T":
+                print "A",
+
+
+	if reverse[i] == "G":
+                print "C",
+
+
+	if reverse[i] == "C":
+                print "G",
+
+

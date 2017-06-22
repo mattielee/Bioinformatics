@@ -1,0 +1,13 @@
+import re
+
+SEQUENCE = "ATGACTGA"
+
+SEQUENCE = re.sub("A","x",SEQUENCE)
+SEQUENCE = re.sub("T","A",SEQUENCE)
+SEQUENCE = re.sub("x","T",SEQUENCE)
+
+SEQUENCE = re.sub("G","y",SEQUENCE)
+SEQUENCE = re.sub("C","G",SEQUENCE)
+SEQUENCE = re.sub("y","C",SEQUENCE)
+
+print SEQUENCE[::-1]
