@@ -1,0 +1,19 @@
+SENTENCE = "hi how are you are you good"
+
+WORDS = SENTENCE.split()
+new = {}
+num = {}
+
+for i in range(len(WORDS)):
+	if not WORDS[i] in new:
+		new[i] = WORDS[i]
+
+for j in range(len(new)):
+	num[new[j]] = 0	
+	
+for k in range(len(WORDS)):
+	if WORDS[k] == new[k]:
+		num[new[k]] += 1
+
+print num
+	 	 

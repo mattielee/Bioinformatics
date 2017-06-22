@@ -1,0 +1,12 @@
+file = open("prots.aln", "r")
+s=""
+
+x = file.readlines()
+for i in range(len(x)):
+	if x[i][0] == ">"
+	s = s+ x[i].strip()
+	
+print s
+
+
+
