@@ -1,0 +1,15 @@
+file = open("/share/data/puzzle.txt", "r")
+lines = file.readlines()
+SEQUENCES = []
+
+
+for i in range(len(lines)):
+	SEQUENCES += lines[i].split()
+
+check = SEQUENCES[0][0:5]
+
+for j in range(len(SEQUENCES)):
+
+	for k in range(len(SEQUENCES)):
+		if check in SEQUENCES[k]:	
+			print SEQUENCES[k]

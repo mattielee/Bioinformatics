@@ -1,0 +1,32 @@
+file = open("/share/data/puzzle2.txt", "r")
+lines = file.readlines()
+SEQUENCES = []
+D = {}
+
+for i in range(len(lines)):
+	SEQUENCES += lines[i].split()
+
+for j in range(len(SEQUENCES)):
+	if not (SEQUENCES[j] in D):
+		D[SEQUENCES[j]] = 1
+
+CLEAN = D.keys()
+
+check = CLEAN[0][0:5]
+print CLEAN[0]
+
+for l in range(len(CLEAN)):
+	for k in range(len(CLEAN)):
+		if check in CLEAN[k][10:15]:
+			print CLEAN[k]
+			check = CLEAN[k][0:5]
+
+print " "
+
+check = CLEAN[0][10:15]
+
+for m in range(len(CLEAN)):
+	for n in range(len(CLEAN)):
+		if check in CLEAN[n][0:5]:
+			print CLEAN[n]
+			check = CLEAN[n][10:15]

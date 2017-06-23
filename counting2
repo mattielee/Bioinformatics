@@ -1,4 +1,20 @@
-SENTENCE = "Betty Botter had some butter but she said this butter's bitter if I bake this bitter butter it would make my batter bitter but a bit of better butter that would make my batter better so she bought a bit of butter better than her bitter butter and she baked it in her batter and the batter was not bitter so 'twas better Betty Botter bought a bit of better butter"
+import re
+
+SENTENCE = "Betty Botter had some butter, \
+"But," she said, "this butter's bitter. \
+If I bake this bitter butter, \
+It would make my batter bitter. \
+But a bit of better butter, \
+That would make my batter better." \
+So she bought a bit of butter – \
+Better than her bitter butter – \
+And she baked it in her batter; \
+And the batter was not bitter. \
+So 'twas better Betty Botter \
+Bought a bit of better butter."
+
+SENTENCE = re.sub("\W", "", SENTENCE)
+
 
 WORDS = SENTENCE.split()
 new = {}

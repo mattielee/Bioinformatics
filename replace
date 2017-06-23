@@ -1,0 +1,7 @@
+import re
+
+SENTENCE = "If I got to 123 Devon Lane Rm 1229"
+
+SENTENCE = re.sub("\d", "", SENTENCE)
+
+print SENTENCE
