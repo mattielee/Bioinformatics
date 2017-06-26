@@ -1,0 +1,21 @@
+#Write a program that takes an integer n and prints out as a word. n<1million
+
+a = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
+b = ['', 'ten', 'twenty', 'thirty', 'fourty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
+
+n = 219
+first = n%10
+second = ((n%100)-first)/10
+third = (n-(n%100))/100
+
+
+if n < 20:
+	print a[n]		
+elif 20<=n<100:
+	print b[second], a[first]
+
+elif 100<=n<1000:
+	if n%100 < 20:
+		print a[third], "hundred", a[n%100]
+	else:
+		print a[third], "hundred", b[second], a[first]	
